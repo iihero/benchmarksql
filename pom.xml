@@ -24,8 +24,21 @@
 		<!-- Logging facility drivers -->
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<version>2.14.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-core</artifactId>
 			<version>2.14.1</version>
+		</dependency>
+		
+		<!-- SAP ASE driver -->
+		<dependency>
+			<groupId>com.sybase.jdbc4</groupId>
+			<artifactId>jconn4</artifactId>
+			<version>16.0.03.12.30318</version>
+			<!-- 16.0.03.12.30318 16.0.03.11.30030 16.0.03.10.29843 16.0.03.09.29377 16.0.03.07.28836 7.07.138.26368 7.07.141.28795 -->
 		</dependency>
 
 		<!-- Postgres driver -->

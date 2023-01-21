@@ -95,7 +95,9 @@ public class AppGeneric extends jTPCCApplication {
             + "isc_tpb_write,"
             + "isc_tpb_wait");
         break;
-
+      case jTPCCConfig.DB_ASE:
+    	dbProps.setProperty("SQLINITSTRING",  "SET ARITHABORT NUMERIC_TRUNCATION OFF SET ANSINULL ON SET ARITHABORT ARITH_OVERFLOW OFF SET STRING_RTRUNCATION ON");
+    	break;
       default:
         break;
     }
@@ -290,6 +292,7 @@ public class AppGeneric extends jTPCCApplication {
       case jTPCCConfig.DB_MARIADB:
       case jTPCCConfig.DB_TSQL:
       case jTPCCConfig.DB_BABELFISH:
+      case jTPCCConfig.DB_ASE:
         stmtStockLevelSelectLow = dbConn.prepareStatement(
               "SELECT count(*) AS low_stock FROM ("
             + "    SELECT s_w_id, s_i_id, s_quantity "

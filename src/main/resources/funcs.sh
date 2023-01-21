@@ -45,6 +45,9 @@ function setCP()
 	transact-sql)
 	    cp="../lib/*"
 	    ;;
+	ase)
+	    cp="../lib/*"
+	    ;;
 	babelfish)
 	    cp="../lib/*"
 	    ;;
@@ -59,7 +62,7 @@ function setCP()
 # ----
 db=$(getProp db)
 case "${db}" in
-    oracle|postgres|firebird|mariadb|transact-sql|babelfish)
+    oracle|postgres|firebird|mariadb|transact-sql|babelfish|ase)
 	;;
     "")	echo "ERROR: missing db= config option in ${PROPS}" >&2
 	exit 1
