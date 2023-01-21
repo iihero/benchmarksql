@@ -1,4 +1,5 @@
-:: this is only the demo for who want to run on windows platform
+:: this is only the demo for who want to run on windows platform,  
+:: here is just a sample of ase dbtype.
 
 java -cp .\;..\BenchmarkSQL.jar;..\lib\* -Dprop=ase.properties -DcommandFile=.\sql.ase\tableCreates.sql -Djava.security.egd=file;\dev\.\urandom com.github.pgsqlio.benchmarksql.jdbc.ExecJDBC
 

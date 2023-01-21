@@ -293,6 +293,8 @@ public class AppGeneric extends jTPCCApplication {
       case jTPCCConfig.DB_TSQL:
       case jTPCCConfig.DB_BABELFISH:
       case jTPCCConfig.DB_ASE:
+      case jTPCCConfig.DB_HANA:
+      case jTPCCConfig.DB_HANA_COL:
         stmtStockLevelSelectLow = dbConn.prepareStatement(
               "SELECT count(*) AS low_stock FROM ("
             + "    SELECT s_w_id, s_i_id, s_quantity "

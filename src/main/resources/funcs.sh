@@ -48,6 +48,12 @@ function setCP()
 	ase)
 	    cp="../lib/*"
 	    ;;
+	hana)
+	    cp="../lib/*"
+	    ;;
+	hana-col)
+	    cp="../lib/*"
+	    ;;
 	babelfish)
 	    cp="../lib/*"
 	    ;;
@@ -62,7 +68,7 @@ function setCP()
 # ----
 db=$(getProp db)
 case "${db}" in
-    oracle|postgres|firebird|mariadb|transact-sql|babelfish|ase)
+    oracle|postgres|firebird|mariadb|transact-sql|babelfish|ase|hana)
 	;;
     "")	echo "ERROR: missing db= config option in ${PROPS}" >&2
 	exit 1

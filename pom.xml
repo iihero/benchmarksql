@@ -40,6 +40,13 @@
 			<version>16.0.03.12.30318</version>
 			<!-- 16.0.03.12.30318 16.0.03.11.30030 16.0.03.10.29843 16.0.03.09.29377 16.0.03.07.28836 7.07.138.26368 7.07.141.28795 -->
 		</dependency>
+		
+		<!--  SAP Hana driver -->
+		<dependency>
+				<groupId>com.sap.db.jdbc</groupId>
+				<artifactId>ngdbc</artifactId>
+				<version>2.15.10</version>
+		</dependency>
 
 		<!-- Postgres driver -->
 		<!-- Depending the Java version, it could use a different version. -->

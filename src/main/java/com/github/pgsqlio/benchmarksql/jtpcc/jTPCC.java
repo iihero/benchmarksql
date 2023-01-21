@@ -196,6 +196,10 @@ public class jTPCC {
 		
 		if (iDBType.equals("ase"))
 			dbType = jTPCCConfig.DB_ASE;
+		else if (iDBType.equals("hana"))
+			dbType = jTPCCConfig.DB_HANA;
+		else if (iDBType.equals("hana-col"))
+			dbType = jTPCCConfig.DB_HANA_COL;
 		else if (iDBType.equals("oracle"))
 			dbType = jTPCCConfig.DB_ORACLE;
 		else if (iDBType.equals("postgres"))
